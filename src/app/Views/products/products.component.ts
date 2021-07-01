@@ -11,7 +11,7 @@ import { ProductsService } from 'src/app/Services/Products/products.service';
 export class ProductsComponent implements OnInit {
 
   products:ProductsI[] ;
-  public columnas = ['nombre', 'descripcion', 'precio', 'eliminar'];
+  public columnas = ['nombre', 'descripcion', 'precio', 'acciones'];
   
   constructor(
      public apiPro:ProductsService 
@@ -27,4 +27,7 @@ export class ProductsComponent implements OnInit {
 eliminar(product){
 
 }
+onUploadFinish(event) {
+  console.log(event);
+ }
 }

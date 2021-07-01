@@ -11,7 +11,14 @@
         <mat-header-cell *matHeaderCellDef>Precio</mat-header-cell>
         <mat-cell *matCellDef="let element"> {{element.productPrice | currency}}</mat-cell>
       </ng-container>
-      <ng-container matColumnDef="eliminar">
+      <!-- <ng-container matColumnDef="imagen">
+        <mat-header-cell *matHeaderCellDef>Imagen</mat-header-cell>
+        <mat-cell *matCellDef="let element">
+          <image-upload (uploadFinished)="onUploadFinish($event)">
+        </image-upload>
+        </mat-cell>
+      </ng-container> -->
+      <ng-container matColumnDef="acciones">
         <mat-header-cell *matHeaderCellDef>Eliminar</mat-header-cell>
         <mat-cell *matCellDef="let element">
           <button (click)="eliminar(element)" mat-icon-button color="warn">
@@ -19,6 +26,8 @@
           </button>
         </mat-cell>
       </ng-container>
+
+      
  <mat-header-row *matHeaderRowDef="columnas"></mat-header-row>
   <mat-row *matRowDef="let row; columns: columnas;"></mat-row>
  

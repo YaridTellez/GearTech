@@ -18,14 +18,21 @@ import { FooterComponent } from './Templates/footer/footer.component';
 import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
 import { HomeComponent } from './Views/home/home.component';
 import { ProductsComponent } from './Views/products/products.component';
+import { ImageUploadModule } from 'angular2-image-upload';
+import { ProductTargetComponent } from './Views/product-target/product-target.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    HomeComponent
+    //AppComponent
     ,DashboardComponent
     ,NavbarComponent
     ,SignInComponent
-    ,RegisterComponent, FooterComponent, HomeComponent, ProductsComponent
+    ,RegisterComponent
+    ,FooterComponent
+    //,HomeComponent
+    ,ProductsComponent
+    ,ProductTargetComponent
   ],
   imports: [
     AngularMaterialModule
@@ -36,10 +43,11 @@ import { ProductsComponent } from './Views/products/products.component';
     ,ReactiveFormsModule
     ,FlexLayoutModule 
     ,HttpClientModule
+    ,ImageUploadModule.forRoot()
   ],
   providers:[],
   //providers: [{provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: {duration: 1500}}],
-  bootstrap: [AppComponent],
+  bootstrap: [HomeComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

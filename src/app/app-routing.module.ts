@@ -7,8 +7,7 @@ import { RegisterComponent } from './Views/register/register.component';
 import { SignInComponent } from './Views/signin/signin.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/Home', pathMatch:'full' },
-  { path: 'Home', component:HomeComponent},
+  { path: '', redirectTo: '/Dashboard', pathMatch:'full' },
   { path: 'Dashboard', component:DashboardComponent},
   { path: 'SignIn', component: SignInComponent },
   { path: 'Register', component: RegisterComponent },
@@ -16,7 +15,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{useHash: true,})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
