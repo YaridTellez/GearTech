@@ -18,6 +18,7 @@ import { FooterComponent } from './Templates/footer/footer.component';
 import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
 import { HomeComponent } from './Views/home/home.component';
 import { ProductsComponent } from './Views/products/products.component';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { ProductsComponent } from './Views/products/products.component';
     ,ReactiveFormsModule
     ,FlexLayoutModule 
     ,HttpClientModule
+    ,IvyCarouselModule 
   ],
   providers:[],
   //providers: [{provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: {duration: 1500}}],

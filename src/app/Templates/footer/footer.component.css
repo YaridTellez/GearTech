@@ -1,0 +1,10 @@
+.foo{
+    background: rgb(36, 36, 43);
+}
+.foo a:hover{
+    color: orange;
+}
+.tex{
+    color: orange;
+    background: rgb(21, 21, 27);
+}
