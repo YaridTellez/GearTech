@@ -19,6 +19,7 @@ import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
 import { HomeComponent } from './Views/home/home.component';
 import { ProductsComponent } from './Views/products/products.component';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { AddProductComponent } from './Views/add-product/add-product.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
     ,DashboardComponent
     ,NavbarComponent
     ,SignInComponent
-    ,RegisterComponent, FooterComponent, HomeComponent, ProductsComponent
+    ,RegisterComponent, FooterComponent, HomeComponent, ProductsComponent, AddProductComponent
   ],
   imports: [
     AngularMaterialModule

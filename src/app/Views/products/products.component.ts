@@ -27,4 +27,7 @@ export class ProductsComponent implements OnInit {
 eliminar(product){
 
 }
+details(){
+  
+}
 }

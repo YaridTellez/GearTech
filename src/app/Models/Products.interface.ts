@@ -21,3 +21,12 @@ export interface ProductsI{
     idCategory : number;
     //token: string;
 }
+export class ProductsC{
+    idProduct: number;
+    productName: string;
+    productPrice : number;
+    productStock : number;
+    imageProduct : string;
+    idCategory : number;
+    //token: string;
+}

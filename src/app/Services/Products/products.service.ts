@@ -16,4 +16,9 @@ export class ProductsService {
     let direccion = this.url + "Products";
     return this.http.get<ProductsI[]>(direccion);
   }
+
+  AddProducts(form:ProductsI):Observable<ProductsI[]>{
+    let direccion = this.url;
+    return this.http.post<ProductsI[]>(direccion,form);
+  }
 }
